@@ -1,0 +1,29 @@
+// Styling for the portfolio section
+
+.portfolio {
+  margin-bottom: -15px;
+  background-color: #efefef;
+  border-bottom: 1rem solid $primary;
+
+  hr {
+    border-color: $secondary;
+  }
+
+  .portfolio-item {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+
+    img {
+      max-height: 25em;
+      width: 100%;
+    }
+  }
+  @media (min-width: 576px) {
+    margin-bottom: -30px;
+
+    .portfolio-item {
+      margin-bottom: 30px;
+    }
+  }
+}

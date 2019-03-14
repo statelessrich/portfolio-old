@@ -1,0 +1,52 @@
+// Typography
+
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+// Custom Horizontal Rule with Star Icon
+
+hr {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.05rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+// Section Padding Settings
+
+section {
+  padding: 3rem 0;
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-width: .05rem
+}

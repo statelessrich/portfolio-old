@@ -41,7 +41,7 @@
   color: #212529 !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -57,7 +57,7 @@
     margin-top: 2rem;
   }
   .about h1 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .about h2 {
     font-size: 3vw;
@@ -80,21 +80,7 @@
 }
 
 .portfolio .portfolio-item {
-  position: relative;
-  display: block;
   margin: 0 0 15px 0;
-}
-
-.portfolio .portfolio-item .portfolio-item-cap
-img {
-  max-height: 25em;
-  width: 100%;
-}
-
-@media (min-width: 576px) {
-  .portfolio .portfolio-item {
-    margin-bottom: 30px;
-  }
 }
 
 a {

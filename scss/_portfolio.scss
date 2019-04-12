@@ -12,20 +12,6 @@
   }
 
   .portfolio-item {
-    position: relative;
-    display: block;
     margin: 0 0 15px 0;
-
-    .portfolio-item-cap
-    img {
-      max-height: 25em;
-      width: 100%;
-    }
-  }
-
-  @media (min-width: 576px) {
-    .portfolio-item {
-      margin-bottom: 30px;
-    }
   }
 }

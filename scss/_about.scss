@@ -1,25 +1,27 @@
+// Styling for the about section
+
 .about {
   height: 100vh;
 
-  header.masthead {
-    // padding-top: calc(1rem + 72px);
-    padding-bottom: 1rem;
-  }
-
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 3rem;
   }
 
   .h2,
   h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
+    line-height: 2rem;
     @include body-font;
   }
 
   li {
     list-style: none;
     padding: 0.25rem 0;
+  }
+
+  .resume {
+    margin-top: 3rem;
   }
 
   .portfolio-link {
@@ -35,21 +37,26 @@
       }
     }
   }
-}
-@media (min-width: 768px) {
-  .about {
-    header.masthead {
-      padding-top: calc(1rem + 106px);
-      padding-bottom: 1rem;
+
+  @media (min-width: 576px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+      margin-top: 2rem;
     }
 
     h1 {
-      font-size: 4.75em;
-      line-height: 4rem;
+      font-size: 7vw;
     }
 
     h2 {
-      font-size: 1.75em;
+      font-size: 3vw;
+    }
+
+    .resume {
+      margin-top: 0;
     }
   }
 }

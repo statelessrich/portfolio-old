@@ -8,24 +8,25 @@
   height: 100vh;
 }
 
-.about header.masthead {
-  padding-bottom: 1rem;
-}
-
 .about h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 3rem;
 }
 
 .about .h2,
 .about h2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-family: 'Muli', sans-serif;
 }
 
 .about li {
   list-style: none;
   padding: 0.25rem 0;
+}
+
+.about .resume {
+  margin-top: 3rem;
 }
 
 .about .portfolio-link {
@@ -40,45 +41,57 @@
   color: #212529 !important;
 }
 
-@media (min-width: 768px) {
-  .about header.masthead {
-    padding-top: calc(1rem + 106px);
-    padding-bottom: 1rem;
+@media (min-width: 576px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .about .name {
+    margin-top: 2rem;
   }
   .about h1 {
-    font-size: 4.75em;
-    line-height: 4rem;
+    font-size: 7vw;
   }
   .about h2 {
-    font-size: 1.75em;
+    font-size: 3vw;
+  }
+  .about .resume {
+    margin-top: 0;
   }
 }
 
 .portfolio {
-  margin-bottom: -15px;
+  padding-top: 50px;
   background-color: #efefef;
-  border-bottom: 1rem solid #3a1273;
 }
 
-.portfolio hr {
-  border-color: #909090;
+.portfolio #portfolio-anchor {
+  top: 20px;
+  display: block;
+  position: relative;
+  visibility: hidden;
 }
 
 .portfolio .portfolio-item {
   position: relative;
   display: block;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
-.portfolio .portfolio-item img {
+.portfolio .portfolio-item .portfolio-item-cap
+img {
   max-height: 25em;
   width: 100%;
 }
 
 @media (min-width: 576px) {
-  .portfolio {
-    margin-bottom: -30px;
-  }
   .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
@@ -99,7 +112,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #3a1273 !important;
+  background-color: #8c8c8c !important;
 }
 
 .bg-secondary {
@@ -107,7 +120,7 @@ a:focus, a:hover, a:active {
 }
 
 .text-primary {
-  color: #3a1273 !important;
+  color: #8c8c8c !important;
 }
 
 .text-secondary {
@@ -115,13 +128,13 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  background-color: #3a1273;
-  border-color: #3a1273;
+  background-color: #8c8c8c;
+  border-color: #8c8c8c;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #240b47;
-  border-color: #240b47;
+  background-color: #737373;
+  border-color: #737373;
 }
 
 .btn-secondary {
@@ -181,5 +194,10 @@ section h3 {
 .btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
-  border-width: .05rem;
+  border-width: 0.05rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

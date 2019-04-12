@@ -48,5 +48,10 @@ section {
 .btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
-  border-width: .05rem
+  border-width: 0.05rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

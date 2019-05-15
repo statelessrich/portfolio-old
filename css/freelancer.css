@@ -33,6 +33,11 @@
   margin-top: 3rem;
 }
 
+.about .email-link,
+.about .email-link:hover {
+  text-decoration: underline;
+}
+
 .about .portfolio-link {
   bottom: 10px;
 }

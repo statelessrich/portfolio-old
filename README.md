@@ -1,6 +1,6 @@
 # portfolio
 My professional portfolio site.
 
-![home](/screenshot1.png?raw=true "home")
+![home](/screen1.png?raw=true "home")
 
-![portfolio](/screenshot2.png?raw=true "portfolio")
+![portfolio](/screen2.png?raw=true "portfolio")

@@ -13,6 +13,11 @@
   background-color: #efefef;
 }
 
+.about .btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .about .btn:visited {
   color: #000;
 }

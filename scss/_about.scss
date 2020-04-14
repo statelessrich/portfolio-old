@@ -7,6 +7,10 @@
     font-size: 1rem;
     background-color: #efefef;
 
+    &:focus {
+      box-shadow: none;
+    }
+
     &:visited {
       color: $black;
     }

@@ -1,5 +1,5 @@
 # portfolio
-My professional portfolio site.
+My professional portfolio site. 
 
 ![home](/screenshot1.png?raw=true "home")
 

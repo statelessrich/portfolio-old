@@ -5,6 +5,15 @@
 
   .btn {
     font-size: 1rem;
+    background-color: #efefef;
+
+    &:visited {
+      color: $black;
+    }
+
+    &:hover {
+      background-color: darken($color: #efefef, $amount: 3);
+    }
   }
 
   h1 {
@@ -31,6 +40,7 @@
   .email-link,
   .email-link:hover {
     text-decoration: underline;
+    color: $black;
   }
 
   .portfolio-link {
@@ -38,11 +48,12 @@
 
     .btn {
       border: none;
+      background-color: #fff;
+      color: $black;
 
-      &:hover {
-        i {
-          color: #212529 !important;
-        }
+      &:hover,
+      &:active {
+        background-color: darken($color: $white, $amount: 3);
       }
     }
   }

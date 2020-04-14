@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v5.0.3 (https://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 
@@ -10,6 +10,15 @@
 
 .about .btn {
   font-size: 1rem;
+  background-color: #efefef;
+}
+
+.about .btn:visited {
+  color: #000;
+}
+
+.about .btn:hover {
+  background-color: #e7e7e7;
 }
 
 .about h1 {
@@ -21,7 +30,7 @@
 .about h2 {
   font-size: 2rem;
   line-height: 2rem;
-  font-family: 'Muli', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .about li {
@@ -36,6 +45,7 @@
 .about .email-link,
 .about .email-link:hover {
   text-decoration: underline;
+  color: #000;
 }
 
 .about .portfolio-link {
@@ -44,10 +54,12 @@
 
 .about .portfolio-link .btn {
   border: none;
+  background-color: #fff;
+  color: #000;
 }
 
-.about .portfolio-link .btn:hover i {
-  color: #212529 !important;
+.about .portfolio-link .btn:hover, .about .portfolio-link .btn:active {
+  background-color: #f7f7f7;
 }
 
 @media (min-width: 768px) {
@@ -107,7 +119,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #8c8c8c !important;
+  background-color: #fff !important;
 }
 
 .bg-secondary {
@@ -115,7 +127,7 @@ a:focus, a:hover, a:active {
 }
 
 .text-primary {
-  color: #8c8c8c !important;
+  color: #fff !important;
 }
 
 .text-secondary {
@@ -123,13 +135,13 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  background-color: #8c8c8c;
-  border-color: #8c8c8c;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #737373;
-  border-color: #737373;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
 }
 
 .btn-secondary {
@@ -143,7 +155,7 @@ a:focus, a:hover, a:active {
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,

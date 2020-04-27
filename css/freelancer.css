@@ -95,7 +95,6 @@
 
 .portfolio {
   padding-top: 50px;
-  background-color: #efefef;
 }
 
 .portfolio #portfolio-anchor {
@@ -107,6 +106,7 @@
 
 .portfolio .portfolio-item {
   margin: 0 0 15px 0;
+  border: 1px solid #efefef;
 }
 
 a {
@@ -212,4 +212,67 @@ section h3 {
 html,
 body {
   overflow-x: hidden;
+}
+
+.arrow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.arrow-container .fa-arrow-down {
+  margin: 20px 0;
+}
+
+.arrow-container-desktop {
+  display: none;
+}
+
+.psd {
+  padding-top: 70px;
+  background-color: #efefef;
+}
+
+.psd .psd-container {
+  margin-top: -50px;
+}
+
+.psd h2 {
+  margin-top: -50px;
+}
+
+@media (min-width: 768px) {
+  .psd .img-link {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .psd .img-link:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+  .psd .arrow-container,
+  .psd .psd-header {
+    display: none;
+  }
+  .psd .arrow-container-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+  }
 }

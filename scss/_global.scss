@@ -1,5 +1,3 @@
-// Typography
-
 body {
   @include body-font;
 }
@@ -12,18 +10,6 @@ h5,
 h6 {
   @include heading-font;
 }
-// Custom Horizontal Rule with Star Icon
-
-hr {
-  max-width: 15rem;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-top: solid 0.05rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-// Section Padding Settings
 
 section {
   padding: 3rem 0;
@@ -54,4 +40,92 @@ section {
 html,
 body {
   overflow-x: hidden;
+  background-color: $light-gray;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+
+  .fa-arrow-down {
+    margin: 20px 0;
+  }
+}
+
+.arrow-container-desktop {
+  display: none;
+}
+
+.psd {
+  padding-top: 70px;
+  background-color: $gray;
+
+  .psd-container {
+    margin-top: -50px;
+  }
+
+  h2 {
+    margin-top: -50px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 10rem 0;
+
+    .img-link {
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    .arrow-container,
+    .psd-header {
+      display: none;
+    }
+    .arrow-container-desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+}
+
+.responsive {
+  padding-top: 70px;
+  background-color: $light-gray;
+
+  .responsive-container {
+    margin-top: -50px;
+  }
+
+  h2 {
+    margin-top: -50px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 10rem 0;
+
+    .img-link {
+      transition: transform 0.2s;
+      height: 800px;
+      width: auto;
+    }
+
+    .arrow-container,
+    .responsive-header {
+      display: none;
+    }
+
+    .arrow-container-desktop,
+    .img-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
 }

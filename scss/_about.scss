@@ -52,12 +52,12 @@
 
     .btn {
       border: none;
-      background-color: #fff;
+      background-color: $light-gray;
       color: $black;
 
       &:hover,
       &:active {
-        background-color: darken($color: $white, $amount: 3);
+        background-color: darken($color: $white, $amount: 5);
       }
     }
   }

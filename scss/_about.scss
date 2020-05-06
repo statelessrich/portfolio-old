@@ -48,6 +48,7 @@
   }
 
   .portfolio-link {
+    position: absolute;
     bottom: 10px;
     left: 0;
 
@@ -60,6 +61,15 @@
       &:active {
         background-color: darken($color: $white, $amount: 5);
       }
+    }
+  }
+
+  @media (max-height: 625px) {
+    height: auto;
+
+    .portfolio-link {
+      position: relative;
+      top: 20px;
     }
   }
 
